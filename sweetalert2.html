@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <title>SweetAlert2</title>
+        <script src="node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
+        <style>
+            body {
+                margin: 0;
+                text-align: center;
+            }
+            .trigger {
+                margin-top: 4rem;
+            }
+            [role="dialog"] button[type="button"]:first-child {
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="trigger">Click Me!</button>
+        <p>Note the missing padding of the 'OK' button in the popup.</p>
+        <script>
+            (() => {
+                document.querySelector('.trigger').addEventListener('click', (event) => {
+                    swal(
+                        'The Internet?',
+                        'That thing is still around?',
+                        'question'
+                    );
+                });
+            })();
+        </script>
+    </body>
+</html>
