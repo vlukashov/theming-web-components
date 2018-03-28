@@ -20,7 +20,7 @@
     "popper.js": "1.14.1",
     "sweetalert2": "7.18.0",
     "paper-styles": "2.1.0",
-    "paper-input": "^2.2.0",
+    "paper-input": "2.2.0",
     "vaadin-text-field": "v2.0.0-beta4"
   }
 }
