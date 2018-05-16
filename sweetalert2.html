@@ -1,38 +1,41 @@
 <!doctype html>
 <html lang="en">
   <head>
-        <meta charset="utf-8">
-        <title>SweetAlert2</title>
-        <script src="bower_components/sweetalert2/dist/sweetalert2.all.js"></script>
-        <style>
-            body {
-                margin: 0;
-                text-align: center;
-            }
-            .trigger {
-                margin-top: 4rem;
-            }
-            [role="dialog"] > *:first-child {
-                background: hotpink;
-            }
-            [role="dialog"] button:first-child {
-                padding: 0;
-            }
-        </style>
-    </head>
-    <body>
-        <button class="trigger">Open a popup</button>
-        <p>Note the background color and the padding of the 'OK' button in the popup.</p>
-        <script>
-            (() => {
-                document.querySelector('.trigger').addEventListener('click', (event) => {
-                    swal(
-                        'The Internet?',
-                        'That thing is still around?',
-                        'question'
-                    );
-                });
-            })();
-        </script>
-    </body>
+    <meta charset="utf-8">
+    <title>SweetAlert2</title>
+
+    <script src="bower_components/sweetalert2/dist/sweetalert2.all.js"></script>
+    
+    <style>
+      body {
+        margin: 0;
+        text-align: center;
+      }
+      .trigger {
+        margin-top: 4rem;
+      }
+      [role="dialog"] > *:first-child {
+        background: hotpink;
+      }
+      [role="dialog"] button:first-child {
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="trigger">Open a popup</button>
+    <p>Note the background color and the padding of the 'OK' button in the popup.</p>
+    <script>
+      (() => {
+        document.querySelector('.trigger')
+          .addEventListener('click', () => {
+            swal(
+              'The Internet?',
+              'That thing is still around?',
+              'question'
+            );
+          });
+      })();
+    </script>
+  </body>
 </html>
